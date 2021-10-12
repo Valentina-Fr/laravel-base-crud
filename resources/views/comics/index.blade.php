@@ -5,15 +5,14 @@
     <div class="container">
         <div class="btn dc-background font-white">CURRENT SERIES</div>
         <div class="row">
-            @foreach($comics as $item)
+            @foreach($comics as $comic)
                 <figure id="card">
-                    <a href="#">
-                        <img src="{{$item['thumb']}}" alt="{{$item['title']}}"> 
-                        <figcaption>{{ $item['title'] }}</figcaption>
+                    <a href=" {{ route('comics.show', $comic->id) }} ">
+                        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"> 
+                        <figcaption>{{ $comic->title }}</figcaption>
                     </a>
                 </figure>
             @endforeach
-            <div class="btn dc-background font-white pointer">LOAD MORE</div>
         </div>
       </div>
   </div>
