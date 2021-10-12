@@ -1,0 +1,37 @@
+header {
+    .row {
+        align-items: center;
+    }
+  
+    ul {
+      display: flex;
+      text-transform: uppercase;
+      
+      li {
+        padding: 50px 5px;
+        margin-top: 3px;
+        
+        a {
+          font-weight: bold;
+          font-size: 0.8rem;
+          color: #4e585f;
+          
+          &.active {
+            color: $dc-color;
+          }
+        }
+      } 
+    }
+    
+    .active {
+      border-bottom: 3px solid $dc-color;
+    }
+  }
+  
+  .col-8 {
+      width: calc(100% / 12 * 8);
+  }
+  
+  .col-4{
+      width: calc(100% / 12 * 4);
+  }

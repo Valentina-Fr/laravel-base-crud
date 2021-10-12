@@ -1,0 +1,94 @@
+// Pagina dettaglio comics
+
+#comics {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+
+    h3 {
+        color: $font-secondary;
+        padding-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+
+    .px-1:last-child {
+        border-left: 1px solid black;
+    }
+
+    .info-banner {
+        background-color: #55ba59;
+        color: white;
+        font-size: 0.85rem;
+        padding-left: 1rem;
+        margin-bottom: 15px;
+
+        * {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    figure {
+        text-align: right;
+        
+        figcaption {
+            font-size: 0.8rem;
+            color: darkgrey;
+            font-weight: bold;
+        }
+    }
+}
+
+.jumbo-border {
+    background-color: $dc-color;
+    width: 100%;
+    height: 50px;
+}
+
+.comics-img {
+    position: absolute;
+    left: 0;
+    bottom: 125%;
+    border: 1px solid #fff;
+}
+
+.comics-info {
+    background-color: #f6f6f6;
+    color: $font-secondary;
+}
+
+.talent, .specs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    h4 {
+        padding-bottom: 30px;
+    }
+
+    h6 {
+        width: 100%;
+    }
+
+    li {
+        display: inline-block;
+        color: $dc-color;
+    }
+
+    li, p {
+        font-size: 0.7rem;
+    }
+
+    >* {
+        border-bottom: 1px solid lightgray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .font-dc {
+        text-transform: uppercase;
+    }
+}

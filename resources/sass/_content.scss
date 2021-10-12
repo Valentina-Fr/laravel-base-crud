@@ -1,0 +1,37 @@
+#content {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+    position: relative;
+    
+    .row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn {
+        padding: 0 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .container > .btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: bold;
+    }
+}
+
+#card {
+    width: 120px;
+    margin: 20px;
+
+    figcaption {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+}
