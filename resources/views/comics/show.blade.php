@@ -2,11 +2,11 @@
 @section('title', 'Comics')
 @section('content')
     <div class="jumbo-border"></div>
-    <div id="comics" class="container row justify-center">
+    <div id="comics" class="container ms-row justify-center">
         <img class="comics-img" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
         <div class="col-8">    
             <h3>{{ $comic->title }}</h3>
-            <div class="info-banner row justify-between">
+            <div class="info-banner ms-row justify-between">
                 <div>
                     <span class="font-green-light">US PRICE: </span><span>{{ $comic->price }}</span>
                 </div>
@@ -26,24 +26,24 @@
         <div class="container row">
             <div class="talent col-6">
                 <h4>Talent</h4>
-                <div class="row">
+                <div class="ms-row">
                     <h6 class="col-3">Art by:</h6>
                 </div>
-                <div class="row">
+                <div class="ms-row">
                     <h6 class="col-3">Written by:</h6>
                 </div>
             </div>
             <div class="specs col-6">
                 <h4>Specs</h4>
-                <div class="row">
+                <div class="ms-row">
                     <h6 class="col-3">Series:</h6>
                     <p class="col-9 font-dc">{{ $comic->series }}</p>
                 </div>
-                <div class="row">
+                <div class="ms-row">
                     <h6 class="col-3">Us Price:</h6>
                     <p class="col-9">{{ $comic->price }}</p>
                 </div>
-                <div class="row">
+                <div class="ms-row">
                     <h6 class="col-3">On Sale Date:</h6>
                     <p class="col-9">{{ $comic->sale_date }}</p>
                 </div>

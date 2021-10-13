@@ -40,19 +40,19 @@
             font-weight: bold;
         }
     }
+
+    .comics-img {
+        position: absolute;
+        left: 0;
+        bottom: 125%;
+        border: 1px solid #fff;
+    }
 }
 
 .jumbo-border {
     background-color: $dc-color;
     width: 100%;
     height: 50px;
-}
-
-.comics-img {
-    position: absolute;
-    left: 0;
-    bottom: 125%;
-    border: 1px solid #fff;
 }
 
 .comics-info {

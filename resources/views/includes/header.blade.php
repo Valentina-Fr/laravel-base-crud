@@ -1,5 +1,5 @@
 <header class="container">
-    <div class="row">
+    <div class="ms-row">
         <div class="col-4">
             <img src="{{ asset('images/dc-logo.png') }}" alt="logo" id="logo">
         </div>

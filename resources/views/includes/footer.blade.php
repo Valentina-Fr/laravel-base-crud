@@ -1,9 +1,9 @@
 <footer>
-      <div class="container row">
+      <div class="container ms-row">
         <div>
             <a class="font-white sign-up" href="#">SIGN UP NOW!</a>
         </div>
-        <div class="row">
+        <div class="ms-row">
             <span class="font-dc">FOLLOW US</span>
             <div class="social">
                 <a href="#"><img src="{{ asset('images/footer-facebook.png') }}" alt="facebook"></a>

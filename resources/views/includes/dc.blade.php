@@ -1,8 +1,8 @@
 <div id="dc">
         <div class="container">
-            <div class="row">
+            <div class="ms-row">
                 <div class="col-6">
-                    <div class="row">
+                    <div class="ms-row">
                         <div class="col-4">
                             <h4>DC COMICS</h4>
                             <ul>

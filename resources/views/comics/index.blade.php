@@ -4,7 +4,7 @@
 <div id="content">
     <div class="container">
         <div class="btn dc-background font-white">CURRENT SERIES</div>
-        <div class="row">
+        <div class="ms-row">
             @foreach($comics as $comic)
                 <figure id="card">
                     <a href=" {{ route('comics.show', $comic->id) }} ">
@@ -14,6 +14,7 @@
                 </figure>
             @endforeach
         </div>
+        <a href="{{ route('comics.create') }}">Add</a>
       </div>
   </div>
 @endsection
