@@ -48,6 +48,7 @@
                     <p class="col-9">{{ $comic->sale_date }}</p>
                 </div>
             </div>
+            <a href="{{ route('comics.edit', $comic->id) }}">Update</a>
         </div>
     </section>
 @endsection
