@@ -16,7 +16,7 @@
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"> 
                         <figcaption>{{ $comic->title }}</figcaption>
                     </a>
-                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="mt-auto">
+                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="mt-auto delete-form" data-name="{{$comic->title}}">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-danger">Delete</button>
@@ -28,4 +28,17 @@
     <div class="container d-flex justify-content-center">
         <a href="{{ route('comics.create') }}" class="btn dc-background text-white pointer">Add Comics</a>
     </div>
+@endsection
+@section('scripts')
+    <script>
+        const deleteItems = document.querySelectorAll('.delete-form');
+        deleteItems.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                const comicsName = form.getAttribute('data-name');
+                e.preventDefault();
+                const conf = window.confirm(`Do you want to delete ${comicsName}?`);
+                if(conf) this.submit();
+            });
+        })
+    </script>
 @endsection

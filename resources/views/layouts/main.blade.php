@@ -15,5 +15,6 @@
     </main>
     @include('includes.dc')
     @include('includes.footer')
+    @yield('scripts')
 </body>
 </html>
