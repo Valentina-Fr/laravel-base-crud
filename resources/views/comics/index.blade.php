@@ -3,6 +3,11 @@
 @section('content')
 <div id="content">
     <div class="container">
+        @if(session('alert'))
+        <div class="alert alert-warning mt-3" role="alert">
+            {{session('alert')}} successfully deleted!
+        </div>
+        @endif
         <div class="btn dc-background text-white current-series">CURRENT SERIES</div>
         <div class="ms-row">
             @foreach($comics as $comic)
@@ -10,12 +15,12 @@
                     <a href=" {{ route('comics.show', $comic->id) }} ">
                         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"> 
                         <figcaption>{{ $comic->title }}</figcaption>
-                        <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
-                            @method('DELETE')
-                            @csrf
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
                     </a>
+                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="mt-auto">
+                        @method('DELETE')
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
                 </figure>
             @endforeach
         </div>

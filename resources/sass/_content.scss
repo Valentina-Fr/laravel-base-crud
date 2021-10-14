@@ -26,6 +26,9 @@
 #card {
     width: 120px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     figcaption {
         font-size: 0.8rem;
