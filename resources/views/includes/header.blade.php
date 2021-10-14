@@ -1,12 +1,14 @@
 <header class="container">
-    <div class="ms-row">
-        <div class="col-4">
-            <img src="{{ asset('images/dc-logo.png') }}" alt="logo" id="logo">
+    <div class="row align-items-center">
+        <div class="col-3">
+            <a href="{{ url('/') }}" class="d-block">
+                <img src="{{ asset('images/dc-logo.png') }}" alt="logo" id="logo">
+            </a>
         </div>
-        <div class="col-8">
+        <div class="col-9">
             <ul>
-                <li><a href="{{url('/')}}">CHARACTERS</a></li>
-                <li><a href="{{route('comics.index')}}">COMICS</a></li>
+                <li><a href="#">CHARACTERS</a></li>
+                <li><a href="{{route('comics.index')}}" class="{{ request()->routeIs('comics.index')? 'active' : ''}}">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
                 <li><a href="#">GAMES</a></li>

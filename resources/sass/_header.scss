@@ -1,20 +1,16 @@
 header {
-    .ms-row {
-        align-items: center;
-    }
-  
     ul {
       display: flex;
       text-transform: uppercase;
+      margin: 60px 0;
       
       li {
-        padding: 50px 5px;
-        margin-top: 3px;
+        margin-right: 15px;
         
         a {
           font-weight: bold;
-          font-size: 0.8rem;
           color: #4e585f;
+          height: 100%;
           
           &.active {
             color: $dc-color;
@@ -22,16 +18,4 @@ header {
         }
       } 
     }
-    
-    .active {
-      border-bottom: 3px solid $dc-color;
-    }
-  }
-  
-  .col-8 {
-      width: calc(100% / 12 * 8);
-  }
-  
-  .col-4{
-      width: calc(100% / 12 * 4);
   }

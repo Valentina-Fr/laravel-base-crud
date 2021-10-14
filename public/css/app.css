@@ -11263,12 +11263,6 @@ textarea.form-control-lg {
   color: #bafd93;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -11296,35 +11290,21 @@ ul {
   display: flex;
 }
 
-header .ms-row {
-  align-items: center;
-}
 header ul {
   display: flex;
   text-transform: uppercase;
+  margin: 60px 0;
 }
 header ul li {
-  padding: 50px 5px;
-  margin-top: 3px;
+  margin-right: 15px;
 }
 header ul li a {
   font-weight: bold;
-  font-size: 0.8rem;
   color: #4e585f;
+  height: 100%;
 }
 header ul li a.active {
   color: #0282f9;
-}
-header .active {
-  border-bottom: 3px solid #0282f9;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
 }
 
 footer {
@@ -11348,13 +11328,6 @@ footer .social * {
 #dc {
   background-image: url("../images/footer-bg.jpg");
 }
-#dc .col-6 {
-  width: 50%;
-  padding: 50px 0;
-}
-#dc .col-4 {
-  width: 33.3333333333%;
-}
 #dc .bg-logo {
   background-image: url("../images/dc-logo-bg.png");
   background-size: cover;
@@ -11375,10 +11348,6 @@ footer .social * {
   padding: 20px 0;
   position: relative;
 }
-#content .ms-row {
-  justify-content: center;
-  flex-wrap: wrap;
-}
 #content .btn {
   padding: 8px 40px;
 }
@@ -11391,8 +11360,7 @@ footer .social * {
 }
 
 #card {
-  width: 120px;
-  margin: 20px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11400,6 +11368,7 @@ footer .social * {
 #card figcaption {
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 #jumbo {
@@ -11411,7 +11380,6 @@ footer .social * {
 #comics {
   margin-top: 50px;
   margin-bottom: 50px;
-  position: relative;
 }
 #comics h3, #comics .h3 {
   color: #003f5e;
@@ -11420,7 +11388,7 @@ footer .social * {
 #comics p {
   line-height: 1.5rem;
 }
-#comics .px-1:last-child {
+#comics .border-black {
   border-left: 1px solid black;
 }
 #comics .info-banner {
@@ -11428,6 +11396,7 @@ footer .social * {
   color: white;
   font-size: 0.85rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 15px;
 }
 #comics .info-banner * {
@@ -11442,17 +11411,18 @@ footer .social * {
   color: darkgrey;
   font-weight: bold;
 }
-#comics .comics-img {
-  position: absolute;
-  left: 0;
-  bottom: 125%;
-  border: 1px solid #fff;
-}
 
 .jumbo-border {
+  position: relative;
   background-color: #0282f9;
   width: 100%;
   height: 50px;
+}
+.jumbo-border .comics-img {
+  position: absolute;
+  left: 12%;
+  bottom: 50%;
+  border: 1px solid #fff;
 }
 
 .comics-info {
@@ -11461,9 +11431,7 @@ footer .social * {
 }
 
 .talent, .specs {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding: 30px;
 }
 .talent h4, .talent .h4, .specs h4, .specs .h4 {
   padding-bottom: 30px;
@@ -11480,10 +11448,13 @@ footer .social * {
 .talent .small-text, .specs .small-text {
   font-size: 0.7rem;
 }
-.talent > *, .specs > * {
+.talent > .row, .specs > .row {
   border-bottom: 1px solid lightgray;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.talent > .row:first-of-type, .specs > .row:first-of-type {
+  border-top: 1px solid lightgray;
 }
 .talent .font-dc, .specs .font-dc {
   text-transform: uppercase;
