@@ -26,7 +26,7 @@
     <input type="text" class="form-control" id="series" name="series" value="{{ $comic->series }}">
   </div>
   <div class="mb-3">
-    <label for="sale-date" class="form-label">Sale date</label>
+    <label for="sale-date" class="form-label">Sale Date</label>
     <input type="date" class="form-control" id="sale-date" name="sale_date" value="{{ $comic->sale_date }}">
   </div>
   <div class="mb-3">

@@ -2,16 +2,16 @@
 @section('title', 'Comics')
 @section('content')
     <div class="jumbo-border"></div>
-    <div id="comics" class="container ms-row justify-center">
+    <div id="comics" class="container ms-row justify-content-center">
         <img class="comics-img" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
         <div class="col-8">    
             <h3>{{ $comic->title }}</h3>
-            <div class="info-banner ms-row justify-between">
+            <div class="info-banner ms-row justify-content-between">
                 <div>
                     <span class="font-green-light">US PRICE: </span><span>{{ $comic->price }}</span>
                 </div>
                 <div>
-                    <span class="font-green-light px-1">AVAILABLE</span>
+                    <span class="font-green-light">AVAILABLE</span>
                     <span class="px-1">Check availability</span>
                 </div>
             </div>
@@ -23,32 +23,34 @@
         </figure>
     </div>
     <section class="comics-info">
-        <div class="container row">
+        <div class="container ms-row">
             <div class="talent col-6">
                 <h4>Talent</h4>
-                <div class="ms-row">
+                <div class="row align-items-center">
                     <h6 class="col-3">Art by:</h6>
                 </div>
-                <div class="ms-row">
+                <div class="row align-items-center">
                     <h6 class="col-3">Written by:</h6>
                 </div>
             </div>
             <div class="specs col-6">
                 <h4>Specs</h4>
-                <div class="ms-row">
-                    <h6 class="col-3">Series:</h6>
-                    <p class="col-9 font-dc">{{ $comic->series }}</p>
+                <div class="row align-items-center">
+                    <div class="col-3"><h6>Series:</h6></div>
+                    <div class="col-9 font-dc small-text">{{ $comic->series }}</div>
                 </div>
-                <div class="ms-row">
-                    <h6 class="col-3">Us Price:</h6>
-                    <p class="col-9">{{ $comic->price }}</p>
+                <div class="row align-items-center">
+                    <div class="col-3"><h6>Us Price:</h6></div>
+                    <div class="col-9 small-text">{{ $comic->price }}</div>
                 </div>
-                <div class="ms-row">
-                    <h6 class="col-3">On Sale Date:</h6>
-                    <p class="col-9">{{ $comic->sale_date }}</p>
+                <div class="row align-items-center">
+                    <div class="col-3"><h6>On Sale Date:</h6></div>
+                    <div class="col-9 small-text">{{ $comic->sale_date }}</div>
                 </div>
             </div>
-            <a href="{{ route('comics.edit', $comic->id) }}">Update</a>
+        </div>
+        <div class="container d-flex justify-content-center py-3">
+            <a href="{{ route('comics.edit', $comic->id) }}" class="btn dc-background text-white pointer">Update</a>
         </div>
     </section>
 @endsection

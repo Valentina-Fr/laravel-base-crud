@@ -10,39 +10,10 @@
     background-color: $dc-color;
 }
 
-.btn {
-    font-size: 0.9rem;
-} 
-
 .pointer {
     cursor: pointer;
 }
 
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
 .font-green-light {
     color: #bafd93;
-}
-
-.px-1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.col-6 {
-    flex-basis: calc(100% /2);
-}
-
-.col-9 {
-    flex-basis: calc(100% /12 * 9);  
-}
-
-.col-3 {
-    flex-basis: calc(100% /12 * 3);  
 }

@@ -71,14 +71,16 @@
 
     h6 {
         width: 100%;
+        margin-bottom: 0;
     }
 
     li {
         display: inline-block;
         color: $dc-color;
+        font-size: 0.7rem;
     }
 
-    li, p {
+    .small-text {
         font-size: 0.7rem;
     }
 

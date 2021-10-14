@@ -1,7 +1,7 @@
 <footer>
       <div class="container ms-row">
         <div>
-            <a class="font-white sign-up" href="#">SIGN UP NOW!</a>
+            <a class="text-white sign-up" href="#">SIGN UP NOW!</a>
         </div>
         <div class="ms-row">
             <span class="font-dc">FOLLOW US</span>

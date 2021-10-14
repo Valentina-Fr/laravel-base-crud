@@ -11255,41 +11255,12 @@ textarea.form-control-lg {
   background-color: #0282f9;
 }
 
-.btn {
-  font-size: 0.9rem;
-}
-
 .pointer {
   cursor: pointer;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
 .font-green-light {
   color: #bafd93;
-}
-
-.px-1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.col-6 {
-  flex-basis: 50%;
-}
-
-.col-9 {
-  flex-basis: 75%;
-}
-
-.col-3 {
-  flex-basis: 25%;
 }
 
 * {
@@ -11318,6 +11289,7 @@ a {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .ms-row {
@@ -11408,12 +11380,9 @@ footer .social * {
   flex-wrap: wrap;
 }
 #content .btn {
-  padding: 0 40px;
-  height: 40px;
-  line-height: 40px;
+  padding: 8px 40px;
 }
-#content .container > .btn {
-  display: inline-block;
+#content .current-series {
   position: absolute;
   top: 0;
   transform: translateY(-50%);
@@ -11498,12 +11467,14 @@ footer .social * {
 }
 .talent h6, .talent .h6, .specs h6, .specs .h6 {
   width: 100%;
+  margin-bottom: 0;
 }
 .talent li, .specs li {
   display: inline-block;
   color: #0282f9;
+  font-size: 0.7rem;
 }
-.talent li, .talent p, .specs li, .specs p {
+.talent .small-text, .specs .small-text {
   font-size: 0.7rem;
 }
 .talent > *, .specs > * {

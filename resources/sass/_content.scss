@@ -11,13 +11,10 @@
     }
     
     .btn {
-        padding: 0 40px;
-        height: 40px;
-        line-height: 40px;
+        padding: 8px 40px;
     }
 
-    .container > .btn {
-    display: inline-block;
+    .current-series {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
