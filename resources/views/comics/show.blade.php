@@ -51,11 +51,14 @@
         </div>
         <div class="container d-flex justify-content-center py-3">
             <a href="{{ route('comics.edit', $comic->id) }}" class="btn dc-background text-white pointer">Update</a>
-            <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="ms-2">
+            <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="ms-2 delete-form" data-name="{{$comic->title}}">
                 @method('DELETE')
                 @csrf
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
         </div>
     </section>
+@endsection
+@section('scripts')
+    <script src="{{ asset('js/confirm.js') }}"></script>
 @endsection
