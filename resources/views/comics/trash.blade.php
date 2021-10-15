@@ -8,7 +8,7 @@
             @forelse($comics as $comic)
             <div class="col-2">
                 <figure id="card">
-                    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"> 
+                    <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="img-fluid"> 
                     <figcaption>{{ $comic->title }}</figcaption>
                     <form method="POST" action="{{ route('comics.restore', $comic->id) }}" class="mt-auto delete-form" data-name="{{$comic->title}}">
                         @method('PATCH')

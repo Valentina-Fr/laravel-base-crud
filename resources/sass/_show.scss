@@ -9,10 +9,6 @@
         padding-bottom: 20px;
     }
 
-    p {
-        line-height: 1.5rem;
-    }
-
     .border-black {
         border-left: 1px solid black;
     }
@@ -50,7 +46,7 @@
 
     .comics-img {
         position: absolute;
-        left: 12%;
+        left: 10%;
         bottom: 50%;
         border: 1px solid #fff;
     }
@@ -73,20 +69,12 @@
         margin-bottom: 0;
     }
 
-    li {
-        display: inline-block;
-        color: $dc-color;
-        font-size: 0.7rem;
-    }
-
     .small-text {
         font-size: 0.7rem;
     }
 
     >.row {
         border-bottom: 1px solid lightgray;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 
     >.row:first-of-type {

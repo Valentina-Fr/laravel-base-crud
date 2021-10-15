@@ -11267,15 +11267,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
   color: darkgray;
@@ -11284,10 +11275,6 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-.ms-row {
-  display: flex;
 }
 
 header ul {
@@ -11309,13 +11296,6 @@ header ul li a.active {
 
 footer {
   background-color: #303030;
-}
-footer .ms-row {
-  justify-content: space-between;
-  align-items: center;
-}
-footer .ms-row * {
-  padding: 10px 0;
 }
 footer .sign-up {
   padding: 8px 40px;
@@ -11385,9 +11365,6 @@ footer .social * {
   color: #003f5e;
   padding-bottom: 20px;
 }
-#comics p {
-  line-height: 1.5rem;
-}
 #comics .border-black {
   border-left: 1px solid black;
 }
@@ -11420,7 +11397,7 @@ footer .social * {
 }
 .jumbo-border .comics-img {
   position: absolute;
-  left: 12%;
+  left: 10%;
   bottom: 50%;
   border: 1px solid #fff;
 }
@@ -11440,18 +11417,11 @@ footer .social * {
   width: 100%;
   margin-bottom: 0;
 }
-.talent li, .specs li {
-  display: inline-block;
-  color: #0282f9;
-  font-size: 0.7rem;
-}
 .talent .small-text, .specs .small-text {
   font-size: 0.7rem;
 }
 .talent > .row, .specs > .row {
   border-bottom: 1px solid lightgray;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .talent > .row:first-of-type, .specs > .row:first-of-type {
   border-top: 1px solid lightgray;

@@ -1,8 +1,8 @@
 @if($comic->exists)
-<form method="POST" action="{{ route('comics.update', $comic) }}" class="m-5">
+<form method="POST" action="{{ route('comics.update', $comic) }}" class="m-5" novalidate>
     @method('patch')
 @else 
-<form method="POST" action="{{ route('comics.store') }}" class="m-5">
+<form method="POST" action="{{ route('comics.store') }}" class="m-5" novalidate>
 @endif
     @csrf
   <div class="mb-3">

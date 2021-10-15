@@ -14,7 +14,7 @@
             <div class="col-2">
                 <figure id="card">
                     <a href="{{ route('comics.show', $comic->id) }}">
-                        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"> 
+                        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="img-fluid"> 
                         <figcaption>{{ $comic->title }}</figcaption>
                     </a>
                     <form method="POST" action="{{ route('comics.destroy', $comic->id) }}" class="mt-auto delete-form" data-name="{{$comic->title}}">

@@ -1,9 +1,9 @@
 <footer>
-      <div class="container ms-row">
+      <div class="container d-flex justify-content-between align-items-center py-4">
         <div>
             <a class="text-white sign-up" href="#">SIGN UP NOW!</a>
         </div>
-        <div class="ms-row">
+        <div class="d-flex align-items-center">
             <span class="font-dc">FOLLOW US</span>
             <div class="social">
                 <a href="#"><img src="{{ asset('images/footer-facebook.png') }}" alt="facebook"></a>
