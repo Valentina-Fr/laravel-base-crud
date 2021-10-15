@@ -51,6 +51,10 @@
                     <div class="col-5"><h6>On Sale Date:</h6></div>
                     <div class="col-7 small-text">{{ $comic->sale_date }}</div>
                 </div>
+                <div class="row align-items-center py-3">
+                    <div class="col-5"><h6>Type:</h6></div>
+                    <div class="col-7 small-text">{{ $comic->type }}</div>
+                </div>
             </div>
         </div>
         <div class="container d-flex justify-content-center pb-4">
