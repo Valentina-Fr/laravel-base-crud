@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class ComicController extends Controller
 {
@@ -39,7 +40,7 @@ class ComicController extends Controller
     {
         $request->validate([
             'title'=>'required|unique:comics|string|min:3|max:50',
-            'description'=>'required|unique:comics|string|min:10|max:500',
+            'description'=>'required|unique:comics|string|min:10',
             'thumb'=>'required|unique:comics|string|min:10|max:200',
             'price'=>'required|numeric|min:1|max:500',
             'series'=>'required|string|min:5|max:50',
@@ -86,6 +87,16 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate([
+            'title'=>['required', Rule::unique('comics')->ignore($comic->id), 'string', 'min:3', 'max:50'],
+            'description'=>['required', Rule::unique('comics')->ignore($comic->id), 'string', 'min:10'],
+            'thumb'=>['required', Rule::unique('comics')->ignore($comic->id), 'string', 'min:10', 'max:200'],
+            'price'=>'required|numeric|min:1|max:500',
+            'series'=>'required|string|min:5|max:50',
+            'sale_date'=>'required|date',
+            'type'=>'required|string|min:10|max:50'
+        ]);
+
         $data = $request->all();
         $comic->update($data);
         return redirect()->route('comics.show', $comic->id);
