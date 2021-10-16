@@ -11294,6 +11294,22 @@ header ul li a {
 header ul li a.active {
   color: #0282f9;
 }
+header form {
+  border-bottom: 3px solid #0282f9;
+}
+header input {
+  border-color: transparent;
+  width: 100px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: right;
+  outline: none;
+}
+header button {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
 
 footer {
   background-color: #303030;

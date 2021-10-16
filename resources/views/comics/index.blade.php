@@ -10,7 +10,7 @@
         @endif
         <div class="btn dc-background text-white current-series">CURRENT SERIES</div>
         <div class="row gy-5">
-            @foreach($comics as $comic)
+            @forelse($comics as $comic)
             <div class="col-2">
                 <figure id="card">
                     <a href="{{ route('comics.show', $comic->id) }}">
@@ -24,7 +24,9 @@
                     </form>
                 </figure>
             </div>
-            @endforeach
+            @empty
+            <p>No matching comics found</p>
+            @endforelse
         </div>
     </div>
     <div class="container d-flex justify-content-center mb-4">
